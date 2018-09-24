@@ -8,14 +8,19 @@ public class BuddyInfo {
 	
 	public static void main(String[] args) {
 		BuddyInfo Fareed = new BuddyInfo();
-		Fareed.setName("Fareed");
-		Fareed.setEmail("Fareed@Fareed.com");
-		Fareed.setNumber("911");//Call in case of emergency
+		
+	
+		Fareed.setAll("Fareed", "911", "Fareed@Fareed.com");//Call in case of emergency	
 		
 		System.out.println(String.format("Hello %s, Can you still be contacted at:\nEmail:%s\nNumber:%s",Fareed.getName(),Fareed.getEmail(),Fareed.getNumber() ));
-
 	}
 
+	public void setAll(String name, String number, String email)
+	{
+		Name = name;
+		Number = number;
+		Email = email;
+	}
 
 	public String getName() {
 		return Name;
